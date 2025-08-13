@@ -1,0 +1,77 @@
+# --- Build artifacts (objects, PCH) ---
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.gch
+*.pch
+
+# --- Binaries ---
+*.exe
+*.out
+*.app
+a.out
+
+# --- Libraries ---
+*.a
+*.lib
+*.dll
+*.dylib
+*.so
+*.so.*
+
+# --- Debug symbols / crash dumps ---
+*.dSYM/
+*.dSYM/**
+
+# --- Common build folders ---
+/build/
+/build-*/
+/cmake-build-*/
+bin/
+/dist/
+/Debug/
+/Release/
+
+# --- CMake junk (generated files) ---
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+# Remove this next line if you want to commit it for tooling (clangd, LSP)
+compile_commands.json
+
+# --- IDE/editor settings ---
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+*.sublime-*
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# --- Coverage / profiling ---
+*.gcda
+*.gcno
+*.gcov
+*.prof
+*.profraw
+*.profdata
+
+# --- Tool caches ---
+.cache/
+ccache/
+.clangd/
