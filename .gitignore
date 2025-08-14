@@ -13,6 +13,10 @@
 *.app
 a.out
 
+*
+!*/        # keep all directories
+!*.*       # keep files that have a dot (e.g., .cpp, .h, README.md)
+
 # --- Libraries ---
 *.a
 *.lib
