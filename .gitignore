@@ -1,4 +1,4 @@
-# --- Build artifacts (objects, PCH) ---
+# --- Object/compile artifacts ---
 *.o
 *.obj
 *.lo
@@ -12,10 +12,6 @@
 *.out
 *.app
 a.out
-
-*
-!*/        # keep all directories
-!*.*       # keep files that have a dot (e.g., .cpp, .h, README.md)
 
 # --- Libraries ---
 *.a
@@ -38,7 +34,7 @@ bin/
 /Debug/
 /Release/
 
-# --- CMake junk (generated files) ---
+# --- CMake generated files ---
 CMakeFiles/
 CMakeCache.txt
 CMakeScripts/
@@ -46,17 +42,16 @@ Testing/
 Makefile
 cmake_install.cmake
 install_manifest.txt
-# Remove this next line if you want to commit it for tooling (clangd, LSP)
 compile_commands.json
 
-# --- IDE/editor settings ---
+# --- IDE/editor ---
 .vscode/
 .idea/
 *.iml
 *.code-workspace
 *.sublime-*
 
-# --- OS files ---
+# --- OS junk ---
 .DS_Store
 Thumbs.db
 
