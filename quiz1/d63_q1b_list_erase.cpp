@@ -25,7 +25,7 @@ void list_erase(vector<int> &v, vector<int> &pos)
     {
         if (i == pos[posIdx])
         {
-            posIdx++;
+            posIdx++;//ใช้วิธีเลื่อนค่าใน pos เช่นถ้าเอาไปแล้วก็เลื่อนไปตน.ถัดไป
             continue;
         }
         temp[j++] = v[i];
