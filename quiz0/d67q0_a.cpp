@@ -18,7 +18,7 @@ int main(){
         auto it=lower_bound(shoeSize.begin(),shoeSize.end(),footSize);
         if(it==shoeSize.begin()) cout<<*(it)<<" ";//case: less than least shoesize
         else if(it==shoeSize.end()||abs(*(it-1)-footSize)<abs(*it-footSize)) cout<<*(it-1)<<" ";// case: between size but not equal
-        else cout<<*(it)<<" ";//case: between size but equal
+        else cout<<*(it)<<" ";//case: between size but equal or tend to bigger size
     }
     
     
