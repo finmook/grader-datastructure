@@ -1,3 +1,6 @@
+// จงเขียนฟังก์ชัน list_erase (vector<int> &v,vector<int> pos) ซึ่งต้องทําการลบข้อมูลใน vector v ณ ตําแหน่ง
+// ที่ระบุใน pos ทั้งหมด ตัวอย่างเช่น ห้v = {0,10,20,30,40,50,60,70,80,90} และให้pos = {3,0,9} การเรียก list_erase
+// (v,pos) จะทําให้v กลายเป็น {10,20,40,50,60,70,80} นั่นเอง
 #include <iostream>
 #include <vector>
 #include <algorithm>

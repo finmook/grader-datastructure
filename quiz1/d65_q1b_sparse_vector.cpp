@@ -1,4 +1,8 @@
 //problem:insert ค่าถ้า key ซำ้ key เก่า+1 key หลังจากนั้นก็+1
+//ตัวอย่างเช่น จาก sparse vector ข้างต้นนี้ หากเราท าการ insert ณ ช่องหมายเลข 5 ด้วย
+// ค่า 999 จะท าให้sparse vector เรามีค่าเป็น
+// v[2] = 10, v[5] = 999, v[6] = 30, v[11] = 7, v[12] = 8, v[21] = 9
+// ให้สังเกตว่าช่องหมายเลข 5, 10, 11, 20 ถูกเลื่อนไปอยู่ช่องหมายเลข 6, 11, 12, 21
 //solution: store value from pos position in vector and erase the value from pos to end() of v(map) after that insert at it with value from vector(use value backward to easy shift)
 //knowledge: erase iterator crash, use vector.begin()-1 in condition of loop instead of >=vector.begin() when loop using iterator,lower_bound,insert return the iterator of pos that we insert
 #include <iostream>
